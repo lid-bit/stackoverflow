@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -24,6 +23,22 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+# Configuring profiles
+profiles:
+  default:
+    outputs:
+      my_output:
+        type: bigquery
+        method: oauth
+        project: 	lydia-sandbox-390714
+        dataset: stackoverflow
+        location: US
+        threads: 1
+        timeout_seconds: 300
+        priority: interactive
+        schema: default
+        sandbox: false
+    target: my_output
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
