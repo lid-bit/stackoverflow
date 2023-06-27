@@ -6,7 +6,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'default'
+profile: stackoverflow
 
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
@@ -22,23 +22,6 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
-
-# Configuring profiles
-profiles:
-  default:
-    outputs:
-      my_output:
-        type: bigquery
-        method: oauth
-        project: 	lydia-sandbox-390714
-        dataset: stackoverflow
-        location: US
-        threads: 1
-        timeout_seconds: 300
-        priority: interactive
-        schema: default
-        sandbox: false
-    target: my_output
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
