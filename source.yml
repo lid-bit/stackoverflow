@@ -1,14 +1,13 @@
 sources:
-  - name: stackoverflow
-    schema: default
-    tables:
-      - name: posts_questions
-        identifier: posts_questions
-      - name: posts_answers
-        identifier: posts_answers
-      - name: users
-        identifier: users
-      - name: tags
-        identifier: tags
-      - name: post_tags
-        identifier: post_tags
+- name: stackoverflow
+  tables:
+    - name: posts_questions
+      identifier: posts_questions
+    - name: posts_answers
+      identifier: posts_answers
+    - name: users
+      identifier: users
+    - name: tags
+      identifier: tags
+    - name: post_tags
+      identifier: post_tags

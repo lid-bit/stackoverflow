@@ -4,8 +4,8 @@
 {{ config(materialized='table') }}
 
 SELECT
-  user_id,
+  id AS user_id,
   reputation,
   display_name,
   creation_date
-FROM {{ source('stackoverflow', 'users') }}
+FROM `lydia-sandbox-390714.stackoverflow.users`
