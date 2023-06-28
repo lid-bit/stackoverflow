@@ -1,15 +1,13 @@
--- Create the question_tag_bridge_table
-{{ config(materialized='table') }}
-
+-- Create the question_status_dimension table
+{{ config(materialized='view') }}
 WITH question_tags AS (
   SELECT
     pq.id AS question_id,
     t.id AS tag_id
-  FROM `stackoverflow.posts_questions` AS pq
-  JOIN `stackoverflow.tags` AS t ON pq.id = t.question_id
+  FROM `lydia-sandbox-390714.stackoverflow.posts_questions` AS pq
+  JOIN `lydia-sandbox-390714.stackoverflow.tags` AS t ON (
+    '|' || pq.tags || '|' LIKE CONCAT('%|', t.tag_name, '|%')
+  )
 )
-
-SELECT
-  question_id,
-  tag_id
+SELECT *
 FROM question_tags

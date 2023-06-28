@@ -6,4 +6,4 @@
 SELECT
   ROW_NUMBER() OVER () AS tag_id,
   tag_name
-FROM `lydia-sandbox-390714.stackoverflow.tags
+FROM `lydia-sandbox-390714.stackoverflow.tags`
