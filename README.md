@@ -10,6 +10,6 @@ Answering what topics for questions are popular and trending but not being answe
 
 # Resources
 - Data Model: https://lucid.app/lucidchart/9cc82192-a9f3-4e8b-8535-b8ac53bf93c3/edit?viewport_loc=-1754%2C-228%2C2937%2C1618%2C0_0&invitationId=inv_cc1c19ed-ae41-4e30-998e-cb405123cfc2
- - BigQuery Stack OverFlow Dataset: console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1slydia-sandbox-390714!2sstackoverflow
-- BigQuery DBT Dataset:console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1slydia-sandbox-390714!2sdbt_lblackley
+ - BigQuery Stack OverFlow Dataset: https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1slydia-sandbox-390714!2sstackoverflow
+- BigQuery DBT Dataset: https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1slydia-sandbox-390714!2sdbt_lblackley
 - Looker Studio Dashboard: https://lookerstudio.google.com/reporting/3bba0894-bcbc-431a-a2d2-77002ebd9f27
