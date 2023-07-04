@@ -7,3 +7,4 @@ SELECT
 id, title, body, creation_date, tag
   FROM `lydia-sandbox-390714.stackoverflow.posts_questions` ,
   UNNEST(SPLIT(tags, '|')) AS tag
+  WHERE answer_count = 0
