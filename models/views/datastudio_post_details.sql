@@ -4,7 +4,7 @@
 {{ config(materialized='view') }}
 
 SELECT
-id, title, body, creation_date, tag, view_count, accepted_answer_id
+id, title, body, creation_date, tag, view_count
   FROM `lydia-sandbox-390714.stackoverflow.posts_questions` ,
   UNNEST(SPLIT(tags, '|')) AS tag
   WHERE answer_count = 0
